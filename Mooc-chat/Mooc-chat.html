@@ -1,0 +1,24 @@
+<head>
+  <title>Mooc-chat</title>
+</head>
+
+<body>
+ {{> entry}}
+
+ {{> messages}}
+</body>
+
+<template name="entry">
+ 	<p><input type="text" id="name" placeholder="Your name"> <input type="text" id="messageBox" placeholder="Your message">
+ 	</p>
+</template>
+
+<template name="messages">
+	{{#each messages}}
+		{{> message}}
+	{{/each}}
+</template>
+
+<template name="message">
+	<p><strong>{{name}}:</strong> {{message}}</p>
+</template>
