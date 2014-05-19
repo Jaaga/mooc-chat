@@ -44,3 +44,18 @@ if (Meteor.isClient) {
     return Messages.find({},{sort:{time: -1}});
   }
 }
+
+
+
+ServiceConfiguration.configurations.remove
+({
+  service:"github"
+});
+
+ServiceConfiguration.configurations.insert
+({
+  service:"github",
+  clientId:"874cdf2ce267f827e482",
+  secret: "392d12a40e696900b875be4cd0adf87d3e464ba0"
+  });
+
