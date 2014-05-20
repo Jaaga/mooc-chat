@@ -59,3 +59,10 @@ ServiceConfiguration.configurations.insert
   secret: "392d12a40e696900b875be4cd0adf87d3e464ba0"
   });
 
+ServiceConfiguration.configurations.insert
+({
+  service:"facebook",
+  clientId:"692905130765521",
+  secret: "9a13fd16c88d44d5ee9e2341b7394134"
+  });
+
