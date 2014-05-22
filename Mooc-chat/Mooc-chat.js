@@ -66,3 +66,11 @@ ServiceConfiguration.configurations.insert
   secret: "9a13fd16c88d44d5ee9e2341b7394134"
   });
 
+ServiceConfiguration.configurations.insert
+({
+  service:"google",
+  clientId:"1058440189654-pql4gb9snv5mjc44gr2u1t9vp88m95jg.apps.googleusercontent.com",
+  secret: "mCD4zhiU8LQ4YDHEWQTnDpkU"
+  });
+
+
