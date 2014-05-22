@@ -2,3 +2,7 @@
 input#messageBox {
 	width: 400px;
 }
+
+.login-link-text {
+	color:#ffffff;
+}
