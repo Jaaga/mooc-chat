@@ -1,0 +1,30 @@
+<template name="roomx1">
+	<div class="row">
+			<div class="col-md-8">
+          {{> roomsList}}
+        </div>
+      </div>
+</template>
+<template name="roomsList">
+<div class="row">
+			<div class="col-md-8">
+				<p>Random Chat items.</p>
+				{{#each rooms}}
+{{> roomItem}}
+{{/each}}
+
+</div>
+</div>
+</template>
+
+<template name="roomItem">
+	<div class="row">
+		<div class="col-md-8">
+			<p>{{title}}<br><span>{{author}}</span></p>
+		</div>
+		<div class="col-md-4" id="gotoroom">
+			<button class="btn btn-success btn-sm float-right"><a href="{{pathFor 'roomx'}}">Go to room</a></button>
+		</div>
+	</div>
+</template>
+

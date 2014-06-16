@@ -1,2 +1,4 @@
-mooc-chat
-=========
+mooc
+====
+
+mooc-chat repository
