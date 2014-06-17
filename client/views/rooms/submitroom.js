@@ -1,4 +1,4 @@
-Template.roomList.events({
+Template.create.events({
 'submit form': function(e) {
 e.preventDefault();
 var room = {
