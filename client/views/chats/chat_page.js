@@ -1,5 +1,6 @@
-Template.postPage.helpers({
-comments: function() {
-return Comments.find({postId: this._id});
-}
+Template.chatPage.helpers({
+	chats: function() {
+		return Messages.find({}, {sort: {submitted: -1}});
+
+	}
 });

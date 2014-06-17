@@ -3,7 +3,7 @@ Template.roomList.events({
 e.preventDefault();
 var room = {
 title: $(e.target).find('[name=roomname]').val(),
-title: $(e.target).find('[name=nickname]').val()
+author: $(e.target).find('[name=nickname]').val()
 
 }
 room._id = Rooms.insert(room);

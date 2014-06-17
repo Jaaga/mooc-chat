@@ -1,1 +1,1 @@
-Messages = new meteor.collection("chats");
+Messages = new Meteor.Collection("chats");
