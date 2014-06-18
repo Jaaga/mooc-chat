@@ -1,11 +1,10 @@
-if (Rooms.find().count() === 0) {
-Rooms.insert({
-title: 'Introducing Telescope',
-author: 'Sacha Greif'
-
+if (Messages.find().count() === 0) {
+Messages.insert({
+message: 'Meteor',
+user: 'Tom Coleman',
 });
-Rooms.insert({
-title: 'Meteor',
-author: 'Tom Coleman'
+Messages.insert({
+message: 'The Meteor Book',
+user: 'Tom Coleman',
 });
 }
