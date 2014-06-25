@@ -6,8 +6,9 @@ title: $(e.target).find('[name=roomname]').val(),
 author: $(e.target).find('[name=nickname]').val()
 
 }
-room._id = Rooms.insert(room);
-Router.go('roomx1', room);
+
+var roomId = Rooms.insert(room);
+return roomId;
 
 
 }

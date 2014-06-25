@@ -1,8 +1,9 @@
-<template name="messageBox">
+	<template name="messageBox">
  	<form>
  		 <div class="col-md-8">
 
-				 	<input name="message" type="text" class="form-control" placeholder="Say what you want"/>
+				 	<input name="body" type="text" class="form-control" placeholder="Say what you want"/>
+				 	<input name="username" type="hidden" value="{{currentUser.username}}"/>
                   </div>
                   
                   <div class="col-md-4">
