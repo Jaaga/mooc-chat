@@ -2,5 +2,5 @@ Meteor.publish('rooms', function() {
 	return Rooms.find()
 })
 Meteor.publish('chats', function() {
-	return Messages.find({roomId: roomId});
+	return Chats.find({roomId: roomId});
 })
