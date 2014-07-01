@@ -6,10 +6,7 @@ title: $(e.target).find('[name=roomname]').val(),
 author: $(e.target).find('[name=nickname]').val()
 
 }
-
 var roomId = Rooms.insert(room);
-return roomId;
-
-
+Router.go('roomsList',room );
 }
 });

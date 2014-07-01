@@ -1,13 +1,13 @@
 <template name="roomsList">
 	<h2><i class="  users icon"></i>Communities</h2>
+	<a  class="ui teal labeled icon button right floated" href="{{pathFor 'createRoom'}}" >Create community
+	<i class="add sign icon "></i>
+	</a>
 	<div class="ui icon input">
 		<input type="text" placeholder="Search...">
 		<i class="search icon"></i>
 	</div>
-	<a class="ui teal labeled icon button right floated" href="{{pathFor 'createRoom'}}" >
-		Create community
-		<i class="add sign icon "></i>
-	</a>
+
 	<div class="ui fluid inverted three item menu">
 		<a class="item">Top</a>
 		<a class="item">New</a>
