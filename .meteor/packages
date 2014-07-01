@@ -5,9 +5,9 @@
 
 standard-app-packages
 iron-router
-bootstrap-3
 accounts-password
 accounts-ui-bootstrap-3
 semantic-ui
 blaze-layout
 spin
+iron-router-progress
