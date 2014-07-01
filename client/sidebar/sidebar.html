@@ -1,11 +1,26 @@
+ <!-- <template name="sidebar"> -->
+	<!-- <ul class="nav nav-list"> -->
+	    <!-- <li class="nav-header"><h2><small>IT'S HOT OUT HERE</small></h2></li> -->
+	    <!-- <li><a href="/home">News Feed</a></li> -->
+		<!-- <li><a href="{{pathFor "roomx1"}}">Find a room</a></li> -->
+		<!-- <li><a href="">Create a profile</a></li> -->
+		<!-- <li><a href="/photos">Photos</a></li> -->
+		<!-- <li><a href="/browse">Browse</a></li> -->
+		<!-- <li><a href="">Create a room</a></li> -->
+	<!-- </ul>	 -->
+<!-- </template> -->
+ 
 <template name="sidebar">
-	<ul class="nav nav-list">
-	    <li class="nav-header"><h2><small>IT'S HOT OUT HERE</small></h2></li>
-	    <li><a href="/home">News Feed</a></li>
-		<li><a href="{{pathFor "roomx1"}}">Find a room</a></li>
-		<li><a href="{{pathFor "userProfile"}}">Create a profile</a></li>
-		<li><a href="/photos">Photos</a></li>
-		<li><a href="/browse">Browse</a></li>
-		<li><a href="{{pathFor "createRoom"}}">Create a room</a></li>
-	</ul>	
+	<div class="ui vertical inverted text menu">
+  <div class="header item"></div>
+  <a class="active item" href="{{pathFor "roomsList"}}">
+    <i class="home icon" ></i> Home
+  </a>
+  <a class="item" href="{{pathFor "userProfile"}}">
+    <i class="user icon"></i> Profile
+  </a>
+  <a class="item">
+    <i class="sign out icon"></i> Sign out
+  </a>
+</div>
 </template>
