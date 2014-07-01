@@ -1,9 +1,9 @@
 {
   "packages": {
-    "bootstrap-3": {},
     "iron-router": {},
     "accounts-ui-bootstrap-3": {},
     "semantic-ui": {},
-    "spin": {}
+    "spin": {},
+    "iron-router-progress": {}
   }
 }
