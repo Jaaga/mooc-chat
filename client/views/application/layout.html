@@ -1,15 +1,20 @@
 <template name="layout">
 	<div class="ui  grid">
-		<div class="three wide column">
-			<img class="image" style="width:150px;" src="logo.jpg">
+		<div class="three wide column animated fadeInUp">
+			<img class="image " style="width:150px;" src="logo.jpg" >
 			{{> sidebar}}
 		</div>
-			<div class="nine wide column">
-			
+			<div class="nine wide column animated fadeInUp">
+				{{#if currentUser}}
 				{{> yield}}
+				{{else}}
+				{{> signupForm}}
+				{{> loginForm}}
+				{{/if}}
+				
 			</div>
-		<div class="four wide column"> 
-		{{> loginButtons}}
+		<div class="four wide column animated fadeInUp"> 
+		
 		</div>
 	</div>
 </template>
