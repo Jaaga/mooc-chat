@@ -196,3 +196,15 @@ p a {
 @media only screen and (max-width : 1000px) {
 
 }
+
+#iron-router-progress {
+    background-color :   #ffffff;
+    box-shadow       : 0 0 5px   #00B5AD;
+}
+
+.highlighted {
+    -webkit-box-shadow: 0 0 8px #FFD700;
+    -moz-box-shadow: 0 0 8px #FFD700;
+    box-shadow: 0 0 8px #FFD700;
+    cursor:pointer;
+}
