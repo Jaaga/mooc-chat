@@ -1,12 +1,15 @@
-<template name="roomsList">
-	<h2><i class="  users icon"></i>Communities</h2>
+<template name="roomsList" >
+<div class="animated fadeInUp">
+	<h2 ><i class="  users icon"></i>Communities</h2>
 	<a  class="ui teal labeled icon button right floated" href="{{pathFor 'createRoom'}}" >Create community
 	<i class="add sign icon "></i>
 	</a>
-	<div class="ui icon input">
-		<input type="text" placeholder="Search...">
+	<form>
+	<div class=" ui icon input">
+		<input type="text" placeholder="Search..." name="search">
 		<i class="search icon"></i>
 	</div>
+	</form>
 
 	<div class="ui fluid inverted three item menu">
 		<a class="item">Top</a>
@@ -16,4 +19,5 @@
 	{{#each rooms}}
 	{{> roomItem}}
 	{{/each}}
+	</div>
 </template>

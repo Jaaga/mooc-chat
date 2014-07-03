@@ -1,53 +1,44 @@
-<template name="userProfile">
-			<h2><i class=" user icon"></i>Create Account</h2>
-			<div class="ui grid">
-				<div class="three wide column">
-					<h3 class="ui header">Step 1</h3>
-				</div>
-				<div class="eleven wide column">
-					<h3 class="ui header">Select Avatar</h3>
-				</div>
+<template name="userAvatar">
+	<form class="animated fadeInUp">			
+		<h2><i class=" user icon"></i>Create Account</h2>
+		<div class="ui grid">
+			<div class="three wide column">
+				<h3 class="ui header">Step 1</h3>
 			</div>
-			<div class="ui small circular images">
-				<form id="avatar">
-			
-					<input type="radio" id="kid" name="avatar" value="kid"><img src="kid.jpg">
-				
-			
-					<input type="radio" id="kid1" name="avatar" value="kid1"><img src="kid1.jpg">
-				
-				
-					<input type="radio" id="kid2" name="avatar" value="kid2"><img src="kid2.jpg">
-				
-					<input type="radio" id="kid3" name="avatar" value="kid3"><img src="kid3.jpg">
-				
-					<input type="radio" id="kid4" name="avatar" value="kid4"><img src="kid4.jpg">
-				
-				</form>
+			<div class="eleven wide column">
+				<h3 class="ui header">Select Avatar</h3>
 			</div>
-			<div class="ui grid">
-				<div class="three wide column">
-					<h3 class="ui header">Step 2</h3>
-				</div>
-				<div class="eleven wide column">
-					<h3 class="ui header">Choose Your Username</h3>
-				</div>
+		</div>
+		<div class="ui small circular images">
+			<img src="kid.jpg"  class="avatar" >
+			<img src="kid1.jpg"   class="avatar" >
+			<img src="kid2.jpg" class="avatar" >
+			<img src="kid3.jpg"   class="avatar" >
+			<img src="kid4.jpg"   class="avatar" >
+		</div>
+		<div class="ui grid">
+			<div class="three wide column">
+				<h3 class="ui header">Step 2</h3>
 			</div>
-			<div class="ui input focus" id="username">
-				<input type="text" placeholder="username">
+			<div class="eleven wide column">
+				<h3 class="ui header">Choose Your Username</h3>
 			</div>
+		</div>
+		<div class="ui input focus" id="username">
+			<input type="text" placeholder="username">
+		</div>
 		
 		<div class="ui grid">
-				<div class="three wide column">
-					<h3 class="ui header">Step 3</h3>
-				</div>
-				<div class="eleven wide column">
-					<h3 class="ui header">Join The Community</h3>
-				</div>
+			<div class="three wide column">
+				<h3 class="ui header">Step 3</h3>
 			</div>
-			<div class="ui teal labeled icon button " id="submit">
-				Submit
-				<i class="forward basic icon"></i>
+			<div class="eleven wide column">
+				<h3 class="ui header">Join The Community</h3>
 			</div>
-		
-	</template>
+		</div>
+		<button class="ui teal labeled icon button " type="submit">
+			Submit
+			<i class="forward basic icon"></i>
+		</button>
+	</form>
+</template >
