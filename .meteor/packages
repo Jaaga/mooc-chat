@@ -6,8 +6,10 @@
 standard-app-packages
 iron-router
 accounts-password
-accounts-ui-bootstrap-3
 semantic-ui
 blaze-layout
 spin
 iron-router-progress
+fuzzy-search
+jquery
+animate-css
