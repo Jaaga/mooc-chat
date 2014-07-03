@@ -1,9 +1,19 @@
-var user = {};
+Template.userAvatar.events({
+	'submit form': function(event) {
+		event.preventDefault();
+		var data=$(event.target).find('[name=avatar]').val();
+		Meteor.users.update({_id:Meteor.user()._id}, {$set:{"profile.avatar": data
+	}})
+	},
 
-user.useravatar = document.getElementbyId('kid');
-user.username = document.getElementbyId('username');
-var submit = document.getElementbyId('submit');
+  
+});
+Template.userAvatar.rendered = function(){
 
-submit.onclick = function() {
-	user._id=Users.insert(user);
+    var element = $(".avatar");
+    
+	element.click(function () { 
+        $(this).addClass("highlighted"); 
+    
+});
 }
