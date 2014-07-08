@@ -18,4 +18,3 @@ return Chats.insert(chat);
 }
 });
 
-

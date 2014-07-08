@@ -1,4 +1,4 @@
-<template name="roomsList" >
+<template name="topRoomsList" >
 <div class="animated fadeInUp">
 	<h2 ><i class="  users icon"></i>Communities</h2>
 	<a  class="ui teal labeled icon button right floated" href="{{pathFor 'createRoom'}}" >Create community
@@ -12,12 +12,12 @@
 	</form>
 
 	<div class="ui fluid inverted three item menu">
-		<a href="{{ pathFor 'topRoomsList' }}" class="item" >New</a>
-		<a class="item">Top</a>
+		<a href="{{ pathFor 'topRoomsList' }}" class="item" >Top</a>
+		<a class="item">New</a>
 		<a class="item">Trending</a>
 	</div>
 	{{#each rooms}}
-	{{> roomItem}}
+	{{> toproomItem}}
 	{{/each}}
 	</div>
-</template> 
+</template>

@@ -4,6 +4,8 @@
     "accounts-ui-bootstrap-3": {},
     "semantic-ui": {},
     "spin": {},
-    "iron-router-progress": {}
+    "iron-router-progress": {},
+    "fuzzy-search": {},
+    "animate-css": {}
   }
 }
