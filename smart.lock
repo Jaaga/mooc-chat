@@ -15,14 +15,12 @@
         "tag": "v0.7.1",
         "commit": "d1ffb3f06ea4c112132b030f2eb1a70b81675ecb"
       },
-<<<<<<< HEAD
-=======
+
       "accounts-ui-bootstrap-3": {
         "git": "https://github.com/mangasocial/meteor-accounts-ui-bootstrap-3.git",
         "tag": "v0.3.2",
         "commit": "8686c0d3107cf48c72a5500b027f081c7e79dbbc"
       },
->>>>>>> 3887069921deb1ac4a8bff48d16628573ce66b54
       "semantic-ui": {
         "git": "https://github.com/nooitaf/meteor-semantic-ui.git",
         "tag": "v0.19.0",
