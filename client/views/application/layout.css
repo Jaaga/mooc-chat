@@ -23,6 +23,18 @@ body {
 overflow-y:auto;
 
 }
+
+#chatbox {
+    text-align:left;
+    margin:0 auto;
+    margin-bottom:25px;
+    
+
+    height:500px;
+    
+    
+    overflow:auto; 
+}
 /*******************************
           UI Overrides
 *******************************/

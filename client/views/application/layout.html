@@ -1,20 +1,30 @@
 <template name="layout">
+	{{#if currentUser}}
 	<div class="ui  grid">
 		<div class="three wide column animated fadeInUp">
 			<img class="image " style="width:150px;" src="logo.jpg" >
 			{{> sidebar}}
 		</div>
 			<div class="nine wide column animated fadeInUp">
-				{{#if currentUser}}
 				{{> yield}}
-				{{else}}
-				{{> signupForm}}
-				{{> loginForm}}
-				{{/if}}
-				
 			</div>
 		<div class="four wide column animated fadeInUp"> 
 		
 		</div>
 	</div>
+	{{else}}
+	<div class="ui grid center aligned animated fadeInUp">
+				<img class="image " style="width:250px;" src="logo.jpg" >
+	</div>
+	<div class="ui grid center aligned">
+		<div class="nine wide column animated fadeInUp ">
+			<div class="ui two column middle aligned relaxed grid basic segment">
+	    	{{> loginForm}}
+				<div class="ui inverted vertical divider">Or</div>
+    			{{> signupForm}}
+    		</div>		
+   	 	</div>
+    </div>
+	{{/if}}
+
 </template>

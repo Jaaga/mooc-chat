@@ -1,9 +1,12 @@
 <template name="chatPage" >
-	<div class="animated fadeInUp">
+	<div class="animated fadeInUp" id="chatbox">
 		{{#each chats}}
 		{{> chatMessages}}
 		{{/each}}
-		{{> messageBox}}
+		
+	</div>
+	<div class="animated fadeInUp">
+	{{> messageBox}}
 	</div>
 </template>
 
