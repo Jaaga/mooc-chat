@@ -1,9 +1,19 @@
 <template name="chatMessages">
-	<div class="col-md-8 animated fadeInUp">
-		<div>
-			<ul class="list-group">
-             <li class="list-group-item"><p>{{author}}: {{body}}</p><br>posted at: {{submittedText}}</li>
-         </ul>
-		</div>
-	</div>
+<div class="ui comments animated fadeInUp">
+  <div class="comment ">
+    <a class="avatar">
+      <img src="/{{picture}}">
+    </a>
+    <div class="content">
+      <a class="author blue  ">{{author}}</a>
+      <div class="metadata ">
+        <div class="date white ">{{ submittedText}}</div>
+      </div>
+      <div class="text">
+        {{body}}
+      </div>
+    </div>
+  </div>
+  <div class="ui inverted  divider"></div>
+</div>
 </template>

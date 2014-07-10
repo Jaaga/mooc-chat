@@ -12,6 +12,7 @@ if (!commentAttributes.body)
 chat = _.extend(_.pick(commentAttributes, 'roomId', 'body'), {
 	userId: user._id,
 	author: user.profile.username,
+	picture: user.profile.avatar,
 	submitted: new Date().getTime()
 });
 return Chats.insert(chat);

@@ -35,6 +35,12 @@ overflow-y:auto;
     
     overflow:auto; 
 }
+.white{
+  color: #ffffff;
+}
+.blue{
+  color: #00B5AD;
+}
 /*******************************
           UI Overrides
 *******************************/
