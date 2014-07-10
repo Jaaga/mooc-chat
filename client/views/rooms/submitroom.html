@@ -2,26 +2,37 @@
 	<div class="row">
 		<div class="col-md-8">
 			<form class="main">
-				<div class="control-group">
-					<label class="control-label" for="url">Room Name</label>
-					<div class="controls">
-						<input name="roomname" type="text" class="form-control" placeholder="Name your room"/>
+				<div class="ui form">
+					<div class="field"> 
+					<div class="ui teal ribbon label">Name your room</div>
+					<br>
+						<input name="roomname" type="text" placeholder="Name your room"/>
+					</div>
+				
+				
+				<div class="field">
+					<div class="ui teal ribbon label">Your Nickname</div>
+
+					<br>
+						<input name="nickname" type="text" placeholder="Your nickname"/>
 					</div>
 				</div>
-				<br>
-				<div class="control-group">
-					<label class="control-label" for="title">Nickname</label>
-					<div class="controls">
-						<input name="nickname" type="text" class="form-control" placeholder="Your nickname"/>
+						
+						
+					<input type="submit" value="Submit" class="ui teal button"/>
+				</form>
 					</div>
+				
 				</div>
-				<div class="control-group">
-					<div class="controls">
-						<br>
-						<input type="submit" value="Submit" class="btn btn-success"/>
-					</div>
-				</div>
-			</form>
-		</div>
-	</div>
+			
+		 	
+	<!--<div class="ui form">
+  <div class="field">
+    <label>User Input</label>
+    <input type="text">
+    <label>Fallow</label>
+    <input type="text">
+  </div>
+</div>-->
 </template>
+
