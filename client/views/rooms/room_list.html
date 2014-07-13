@@ -6,7 +6,10 @@
 	</a>
 	<form>
 	<div class=" ui icon input">
-		<input type="text" placeholder="Search..." name="search">
+		
+		<div class="search-input">
+        {{> esInput index="rooms" id="search" placeholder="Search some stuff.." }}
+    </div>
 		<i class="search icon"></i>
 	</div>
 	</form>
@@ -16,8 +19,21 @@
 		<a class="item">Top</a>
 		
 	</div>
-	{{#each rooms}}
-	{{> roomItem}}
-	{{/each}}
+	{{#ifEsIsSearching index="rooms" id="search"}}
+        <div><h3>Loading...</h3></div>
+    {{/ifEsIsSearching}}
+    {{#if inputIsNotEmpty}}
+            {{#esEach index="rooms" }}
+                {{> roomItem}}
+            {{/esEach}}
+
+            {{#ifEsHasNoResults index="rooms" id="search"}}
+                <div class="no-results"> <h3>No results found!</h3></div>
+            {{/ifEsHasNoResults}}
+        {{else}}
+        {{#each rooms}}
+			{{> roomItem}}
+		{{/each}}
+    {{/if}}
 	</div>
 </template> 

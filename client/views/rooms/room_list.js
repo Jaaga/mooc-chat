@@ -1,14 +1,18 @@
 Template.roomsList.helpers({
-rooms: function() {
-return Rooms.find({}, {sort: {submitted: -1}});
-}
+	rooms: function() {
+		return Rooms.find({}, {sort: {submitted: -1}});
+	}
 });
+Template.roomsList.inputIsNotEmpty = function () {
+	var searchValue = Session.get('searchVal');
+	return searchValue && searchValue.length > 0;
+};
 Template.roomsList.events({
-'submit form': function(e) {
-e.preventDefault();
-
-var searchString= $(e.target).find('[name=search]').val();
-var someCursor = Rooms.find({ title: searchString });
-Router.go('roomsList');
-}
+	'keyup .search-input input': function (e) {
+		Session.set('searchVal', $(e.target).val());
+	},
+	
 });
+
+
+

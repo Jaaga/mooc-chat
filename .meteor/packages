@@ -8,8 +8,7 @@ iron-router
 accounts-password
 semantic-ui
 blaze-layout
-spin
 iron-router-progress
-fuzzy-search
 jquery
 animate-css
+easy-search

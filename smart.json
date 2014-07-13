@@ -2,9 +2,8 @@
   "packages": {
     "iron-router": {},
     "semantic-ui": {},
-    "spin": {},
     "iron-router-progress": {},
-    "fuzzy-search": {},
-    "animate-css": {}
+    "animate-css": {},
+    "easy-search": {}
   }
 }
